@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3C Ventures - Luxury Coastal Development</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body class="bg-[#F8F7F4] text-[#0B1F3A] font-serif">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-white/80 border-b border-gray-200">
+        <div class="max-w-7xl mx-auto flex items-center justify-between px-8 py-4">
+            <button onclick="navigateTo('home')" class="flex items-center">
+                <img src="public/images/3cventures-logo.png" class="h-12" alt="3C Ventures Logo">
+            </button>
+            <ul class="hidden md:flex gap-10 tracking-wide text-sm uppercase">
+                <li><a href="#home" onclick="navigateTo('home')" class="hover:text-[#8C6A3B] transition-colors">Home</a></li>
+                <li><a href="#about" onclick="navigateTo('about')" class="hover:text-[#8C6A3B] transition-colors">About</a></li>
+                <li><a href="#services" onclick="navigateTo('services')" class="hover:text-[#8C6A3B] transition-colors">Services</a></li>
+                <li><a href="#projects" onclick="navigateTo('projects')" class="hover:text-[#8C6A3B] transition-colors">Projects</a></li>
+                <li><a href="#contact" onclick="navigateTo('contact')" class="hover:text-[#8C6A3B] transition-colors">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="content" class="pt-16">
+        <!-- Home Section -->
+        <section id="home" class="relative h-screen overflow-hidden">
+            <img src="public/images/66-e-second-hero.jpg" class="absolute inset-0 h-full w-full object-cover" alt="Hero">
+            <div class="absolute inset-0 bg-black/40"></div>
+            <div class="relative z-10 flex h-full items-center justify-center px-6 text-center">
+                <div class="max-w-5xl text-white">
+                    <p class="tracking-[0.4em] uppercase text-sm mb-6">Luxury Coastal Development • Brunswick County, NC</p>
+                    <h1 class="text-6xl md:text-8xl font-light leading-tight mb-8">Coastal Homes<br>Designed to Endure.</h1>
+                    <p class="text-lg md:text-xl leading-relaxed max-w-3xl mx-auto mb-10 text-gray-200">
+                        3C Ventures develops architecturally refined luxury residences throughout Brunswick County's premier coastal communities, blending elevated craftsmanship with timeless coastal living.
+                    </p>
+                    <div class="flex gap-4 justify-center flex-wrap">
+                        <button onclick="navigateTo('projects')" class="bg-white text-[#0B1F3A] hover:bg-gray-100 rounded-full px-8 py-6 text-sm tracking-wide uppercase">
+                            View Portfolio
+                        </button>
+                        <button onclick="navigateTo('contact')" class="rounded-full border-2 border-white text-white hover:bg-white hover:text-[#0B1F3A] px-8 py-6 text-sm uppercase">
+                            Contact Us
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="pt-40 pb-32 px-8 max-w-5xl mx-auto">
+            <p class="uppercase tracking-[0.3em] text-sm text-[#8C6A3B] mb-4">About 3C Ventures</p>
+            <h2 class="text-6xl font-light mb-10 leading-tight">A development firm built around thoughtful coastal living.</h2>
+            <div class="space-y-8 text-lg leading-relaxed text-gray-700 mb-24">
+                <p>3C Ventures is a luxury coastal development firm focused on creating architecturally refined residences throughout Brunswick County's premier island communities.</p>
+                <p>Our approach combines strategic land acquisition, thoughtful design direction, and disciplined project execution to deliver homes that reflect both timeless coastal architecture and modern luxury living.</p>
+                <p>From Ocean Isle Beach to Holden Beach, each project is designed to embrace its surroundings while delivering elevated craftsmanship, exceptional functionality, and long-term value.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-[2rem] p-8 shadow-sm border border-gray-100">
+                    <h3 class="text-3xl font-light mb-3">Vic Cianci</h3>
+                    <p class="text-sm uppercase tracking-wide text-[#8C6A3B] mb-6">Co-Founder</p>
+                    <p class="text-gray-600 leading-relaxed mb-6">Co-founder of 3C Ventures with a focus on luxury coastal development strategy, project execution, and identifying high-value residential opportunities throughout Brunswick County.</p>
+                    <a href="mailto:vic@3cvent.com" class="text-[#0B1F3A] underline underline-offset-4">vic@3cvent.com</a>
+                </div>
+                <div class="bg-white rounded-[2rem] p-8 shadow-sm border border-gray-100">
+                    <h3 class="text-3xl font-light mb-3">Mike Cianci</h3>
+                    <p class="text-sm uppercase tracking-wide text-[#8C6A3B] mb-6">Co-Founder</p>
+                    <p class="text-gray-600 leading-relaxed mb-6">Co-founder specializing in project oversight, development coordination, and delivering refined coastal residences designed around long-term value and craftsmanship.</p>
+                    <a href="mailto:mike@3cvent.com" class="text-[#0B1F3A] underline underline-offset-4">mike@3cvent.com</a>
+                </div>
+                <div class="bg-white rounded-[2rem] p-8 shadow-sm border border-gray-100">
+                    <h3 class="text-3xl font-light mb-3">Ryan Casano</h3>
+                    <p class="text-sm uppercase tracking-wide text-[#8C6A3B] mb-6">Co-Founder</p>
+                    <p class="text-gray-600 leading-relaxed mb-6">Co-founder focused on operations, acquisition strategy, and helping guide projects from concept through completion across premier island communities.</p>
+                    <a href="mailto:ryan@3cvent.com" class="text-[#0B1F3A] underline underline-offset-4">ryan@3cvent.com</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="pt-40 pb-32 px-8 max-w-7xl mx-auto">
+            <p class="uppercase tracking-[0.3em] text-sm text-[#8C6A3B] mb-4">Services</p>
+            <h2 class="text-6xl font-light mb-16">End-to-end development expertise.</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="rounded-[2rem] border border-gray-100 shadow-sm bg-white p-8">
+                    <h3 class="text-3xl font-light mb-6">Land Acquisition</h3>
+                    <p class="text-gray-600 leading-relaxed text-lg">Strategic sourcing and acquisition of premier coastal development sites.</p>
+                </div>
+                <div class="rounded-[2rem] border border-gray-100 shadow-sm bg-white p-8">
+                    <h3 class="text-3xl font-light mb-6">Luxury Residential Development</h3>
+                    <p class="text-gray-600 leading-relaxed text-lg">Ground-up development of high-end custom and speculative residences.</p>
+                </div>
+                <div class="rounded-[2rem] border border-gray-100 shadow-sm bg-white p-8">
+                    <h3 class="text-3xl font-light mb-6">Construction Management</h3>
+                    <p class="text-gray-600 leading-relaxed text-lg">Comprehensive oversight from planning through final completion.</p>
+                </div>
+                <div class="rounded-[2rem] border border-gray-100 shadow-sm bg-white p-8">
+                    <h3 class="text-3xl font-light mb-6">Project Planning</h3>
+                    <p class="text-gray-600 leading-relaxed text-lg">Thoughtful coordination of design, permitting, and execution.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="pt-40 pb-32 px-8 max-w-7xl mx-auto">
+            <p class="uppercase tracking-[0.3em] text-sm text-[#8C6A3B] mb-4">Portfolio</p>
+            <h2 class="text-6xl font-light mb-20 leading-tight">Distinguished coastal development projects.</h2>
+            
+            <!-- Project 1 -->
+            <div class="grid lg:grid-cols-2 gap-16 items-center mb-32">
+                <div>
+                    <img src="public/images/105-by-the-sea-exterior.jpg" class="rounded-[2rem] h-[650px] w-full object-cover shadow-2xl" alt="105 By the Sea">
+                </div>
+                <div>
+                    <p class="text-sm uppercase tracking-wide text-[#8C6A3B] mb-4">Holden Beach, NC</p>
+                    <h3 class="text-5xl font-light mb-8 leading-tight">105 By the Sea</h3>
+                    <p class="text-lg text-gray-600 leading-relaxed mb-10">A luxury coastal residence designed around elevated outdoor living, bright modern interiors, and refined architectural detailing.</p>
+                    <div class="grid grid-cols-2 gap-4 mb-10 text-sm uppercase tracking-wide text-gray-500">
+                        <div>Luxury Coastal Design</div>
+                        <div>Elevated Construction</div>
+                        <div>Premium Island Location</div>
+                        <div>Modern Coastal Architecture</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="grid lg:grid-cols-2 gap-16 items-center mb-32 lg:[&>*:first-child]:order-2">
+                <div>
+                    <img src="public/images/66-e-second-exterior.jpg" class="rounded-[2rem] h-[650px] w-full object-cover shadow-2xl" alt="66 E Second">
+                </div>
+                <div>
+                    <p class="text-sm uppercase tracking-wide text-[#8C6A3B] mb-4">Ocean Isle Beach, NC</p>
+                    <h3 class="text-5xl font-light mb-8 leading-tight">66 E Second</h3>
+                    <p class="text-lg text-gray-600 leading-relaxed mb-10">A contemporary coastal home featuring dramatic vaulted ceilings, expansive glazing, resort-style outdoor living, and sophisticated modern finishes.</p>
+                    <div class="grid grid-cols-2 gap-4 mb-10 text-sm uppercase tracking-wide text-gray-500">
+                        <div>Luxury Coastal Design</div>
+                        <div>Elevated Construction</div>
+                        <div>Premium Island Location</div>
+                        <div>Modern Coastal Architecture</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <img src="public/images/41-grande-view-aerial.jpg" class="rounded-[2rem] h-[650px] w-full object-cover shadow-2xl" alt="41 Grande View">
+                </div>
+                <div>
+                    <p class="text-sm uppercase tracking-wide text-[#8C6A3B] mb-4">Ocean Isle Beach, NC</p>
+                    <h3 class="text-5xl font-light mb-8 leading-tight">41 Grande View</h3>
+                    <p class="text-lg text-gray-600 leading-relaxed mb-10">Currently approaching completion, this modern waterfront residence captures expansive marsh and ocean views through elevated architecture and layered outdoor living spaces.</p>
+                    <div class="grid grid-cols-2 gap-4 mb-10 text-sm uppercase tracking-wide text-gray-500">
+                        <div>Luxury Coastal Design</div>
+                        <div>Elevated Construction</div>
+                        <div>Premium Island Location</div>
+                        <div>Modern Coastal Architecture</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="pt-40 pb-32 px-8 max-w-4xl mx-auto text-center">
+            <p class="uppercase tracking-[0.3em] text-sm text-[#8C6A3B] mb-4">Contact</p>
+            <h2 class="text-6xl font-light leading-tight mb-10">Let's discuss your next opportunity.</h2>
+            <p class="text-lg text-gray-600 leading-relaxed mb-12 max-w-2xl mx-auto">
+                Whether you're interested in partnership opportunities, available projects, or future developments, we welcome the conversation.
+            </p>
+            <div class="inline-flex items-center gap-3 text-xl border border-gray-300 rounded-full px-8 py-5 bg-white">
+                <span>📧</span>
+                <a href="mailto:3cvent@gmail.com">3cvent@gmail.com</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-200 py-10 px-8">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <img src="public/images/3cventures-logo.png" class="h-12" alt="3C Ventures Logo">
+            <p class="text-sm tracking-wide text-gray-500 uppercase">© <span id="year"></span> 3C Ventures Real Estate Group</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
