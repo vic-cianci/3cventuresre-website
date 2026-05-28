@@ -1,0 +1,52 @@
+/* Main CSS */
+
+:root {
+    --primary: #0B1F3A;
+    --accent: #8C6A3B;
+    --gold: #C5A46D;
+    --light: #F8F7F4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Smooth transitions */
+a, button {
+    transition: all 0.3s ease;
+}
+
+/* Logo styling */
+img[alt="3C Ventures Logo"] {
+    mix-blend-mode: multiply;
+    filter: brightness(1.1);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--light);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--accent);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary);
+}
